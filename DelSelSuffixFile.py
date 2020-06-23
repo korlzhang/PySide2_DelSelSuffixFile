@@ -21,6 +21,7 @@ class DelSelSuffixFile():
 
         # 从UI定义中动态创建一个相应的窗口对象
         self.ui = QUiLoader().load(qfile_stats)
+        self.ui.setFixedSize(262,225)       # 固定窗口大小
 
         self.ui.button.clicked.connect(self.getAllSuffixD)
         self.ui.delButton.clicked.connect(self.delSelSuffix)
